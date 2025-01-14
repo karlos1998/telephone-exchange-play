@@ -1,0 +1,60 @@
+{
+    "name": "karlos3098/telephone-exchange-play",
+    "description": "",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "sms",
+        "play"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "karlos1998",
+            "email": "fadeusz98@gmail.com"
+        }
+    ],
+    "type": "library",
+    "version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "Karlos3098\\TelephoneExchangePlay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Karlos3098\\TelephoneExchangePlay\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "pint": "vendor/bin/pint"
+    },
+    "require": {
+        "php": "^8.2|^8.3"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "orchestra/testbench": "^9.0.0||^8.22.0",
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-arch": "^2.7",
+        "pestphp/pest-plugin-laravel": "^2.3",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-phpunit": "^1.3"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karlos3098\\TelephoneExchangePlay\\PlayProvider"
+            ]
+        }
+    }
+}
