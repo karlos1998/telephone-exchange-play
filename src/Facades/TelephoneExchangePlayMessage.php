@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Facade;
 use Karlos3098\TelephoneExchangePlay\Services\TelephoneExchangePlayMessageService;
 
 /**
- * @method static void sendMessage(array|string $recipients, string $text, string $from = null)
+ * @method static void sendSms(array|string $recipients, string $text, string $from = null)
  *
  * @see \Karlos3098\TelephoneExchangePlay\Services\TelephoneExchangePlayMessageService
  */
