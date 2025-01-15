@@ -5,7 +5,6 @@ namespace Karlos3098\TelephoneExchangePlay\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Karlos3098\TelephoneExchangePlay\Channels\PlayChannel;
 use Karlos3098\TelephoneExchangePlay\Interfaces\TelephoneExchangePlayNotification;
 use Karlos3098\TelephoneExchangePlay\Services\PlayMessage;
 
