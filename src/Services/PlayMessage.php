@@ -8,12 +8,7 @@ class PlayMessage
 
     private string $from;
 
-    private string $clientId;
-    private string $clientSecret;
-
     private array $phoneNumbers = [];
-
-    private $callback = null;
 
     public function __construct()
     {
@@ -21,10 +16,6 @@ class PlayMessage
         if ($from) {
             $this->from = $from;
         }
-
-        $this->clientId = config('play_exchange.client.id');
-
-        $this->clientSecret = config('play_exchange.client.secret');
     }
 
     //getters
@@ -87,13 +78,6 @@ class PlayMessage
     public function breakLine(): static
     {
         $this->text .= "\n";
-
-        return $this;
-    }
-
-    public function callback(callable $callback): static
-    {
-        $this->callback = $callback;
 
         return $this;
     }

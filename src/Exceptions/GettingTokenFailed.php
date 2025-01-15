@@ -2,7 +2,7 @@
 
 namespace Karlos3098\TelephoneExchangePlay\Exceptions;
 
-class CouldNotSentNotification extends \Exception
+class GettingTokenFailed extends \Exception
 {
     public function __construct(string $message, int $code)
     {
