@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/karolsojka/PRACA/telephone-exchange-play-package/packages/karlos3098/telephone-exchange-play/phpunit.xml.dist" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.042829">
+    <testsuite name="VendorName Test Suite" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.042829">
+      <testsuite name="Tests\FacadeTest" file="tests/FacadeTest.php" tests="3" assertions="7" errors="0" failures="0" skipped="0" time="0.040757">
+        <testcase name="it throws an exception when token retrieval fails" file="tests/FacadeTest.php::it throws an exception when token retrieval fails" class="Tests\FacadeTest" classname="Tests.FacadeTest" assertions="2" time="0.035017"/>
+        <testcase name="it throws an exception when SMS sending fails" file="tests/FacadeTest.php::it throws an exception when SMS sending fails" class="Tests\FacadeTest" classname="Tests.FacadeTest" assertions="3" time="0.003919"/>
+        <testcase name="it sends an SMS successfully" file="tests/FacadeTest.php::it sends an SMS successfully" class="Tests\FacadeTest" classname="Tests.FacadeTest" assertions="2" time="0.001820"/>
+      </testsuite>
+      <testsuite name="Tests\ExampleTest" file="tests/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.002072">
+        <testcase name="it can test" file="tests/ExampleTest.php::it can test" class="Tests\ExampleTest" classname="Tests.ExampleTest" assertions="1" time="0.002072"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
