@@ -11,7 +11,7 @@ composer require karlos3098/telephone-exchange-play
 ```
 
 ```php
-php artisan vendor:publish --provider="Karlos3098\TelephoneExchangePlay|PlayProvider" --tag=config
+php artisan vendor:publish --provider="Karlos3098\TelephoneExchangePlay\PlayProvider" --tag=config
 ```
 
 
