@@ -37,7 +37,7 @@ class PlayChannel
             $userPhoneNumbers = $notifiable->routeNotificationForTelephoneExchangePlay($notification);
             if(is_array($userPhoneNumbers)) {
                 $phoneNumbers = array_merge($userPhoneNumbers,$phoneNumbers);
-            } else if(is_string($userPhoneNumbers)) {
+            } else if(is_string($userPhoneNumbers) && $userPhoneNumbers != '') {
                 $phoneNumbers[] = $notifiable->routeNotificationForTelephoneExchangePlay($notification);
             }
         }
