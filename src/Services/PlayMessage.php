@@ -24,9 +24,9 @@ class PlayMessage
         return $this->text;
     }
 
-    public function getFrom(): int
+    public function getFrom(): string
     {
-        return $this->from;
+        return $this->from ?? config('play_exchange.from');
     }
     public function getPhoneNumbers(): array
     {

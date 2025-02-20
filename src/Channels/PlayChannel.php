@@ -31,7 +31,7 @@ class PlayChannel
          */
         $scNotification = $notification->toPlayTelephoneExchange($notifiable);
 
-        $phoneNumbers = $scNotification->getPhoneNumbers();
+        $phoneNumbers = $scNotification->getPhoneNumbers() ?? [];
 
         if (in_array(HasDifferentPhoneNumberForTelephoneExchangePlay::class, class_implements($notifiable::class))) {
             $userPhoneNumbers = $notifiable->routeNotificationForTelephoneExchangePlay($notification);
@@ -42,11 +42,13 @@ class PlayChannel
             }
         }
 
-        $this->messageService->sendSms(
-            recipients: $phoneNumbers,
-            text: $scNotification->getText(),
-            from: $scNotification->getFrom()
-        );
+        if(count($phoneNumbers) > 0) {
+            $this->messageService->sendSms(
+                recipients: $phoneNumbers,
+                text: $scNotification->getText(),
+                from: $scNotification->getFrom()
+            );
+        }
 
     }
 }
