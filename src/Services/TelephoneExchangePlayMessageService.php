@@ -46,7 +46,7 @@ class TelephoneExchangePlayMessageService
             /**
              * Unfortunately, the play api does not return any answer what went wrong :)
              */
-            throw new GettingTokenFailed("Message could not be sent", $response->status());
+            throw new GettingTokenFailed("Message could not be sent: " . $response->body(), $response->status());
         }
     }
 
