@@ -1,5 +1,7 @@
 ## Laravel package for integration with Play network telephone gateways.
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/karlos)
+
 ##
 #### To get started, you will need an account on this platform with a purchased phone number.
 https://uslugidlafirm.play.pl/welcome/index.html
